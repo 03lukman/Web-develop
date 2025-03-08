@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Lukman Nurhakim</title>
+
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(to right, #007bff, #00d4ff);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero img {
+            width: 180px;
+            height: 180px; /* Ukuran sama untuk bulat */
+            border-radius: 50%;
+            object-fit: cover; /* Mencegah gambar lonjong */
+            border: 5px solid white;
+            margin-top: 15px;
+        }
+
+        /* Section Style */
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Portofolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#biodata">Biodata</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portofolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="fw-bold">Selamat Datang di Portofolio Saya</h1>
+            <p class="fs-5">Developer Backend | Golang Enthusiast</p>
+            <img src="assets/ppp.jpg" alt="Foto Saya">
+        </div>
+    </section>
+
+    <!-- BIODATA -->
+    <section id="biodata" class="py-5">
+        <div class="container">
+            <div class="card p-4">
+                <h2 class="section-title text-center">Biodata</h2>
+                <table class="table table-hover">
+                    <tbody>
+                        <tr>
+                            <td><strong>Nama</strong></td>
+                            <td>Lukman Nurhakim</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Usia</strong></td>
+                            <td>24 Tahun</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Alamat</strong></td>
+                            <td>Bogor</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Email</strong></td>
+                            <td>lukmannurhakim3130@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pendidikan</strong></td>
+                            <td>S1 Informatika</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hobi</strong></td>
+                            <td>Data Science, Full-Stack Development</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTOFOLIO -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <div class="card p-4">
+                <h2 class="section-title text-center">Portofolio</h2>
+                <table class="table table-bordered table-striped">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>Proyek</th>
+                            <th>Deskripsi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Website Toko Online</td>
+                            <td>Website e-commerce menggunakan Golang dan MySQL</td>
+                        </tr>
+                        <tr>
+                            <td>Monitoring Sistem Parkir</td>
+                            <td>Sistem berbasis web untuk monitoring tempat parkir</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-3 bg-primary text-white mt-5">
+        <p class="mb-0">&copy; 2025 Lukman Nurhakim | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
